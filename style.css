@@ -1,0 +1,38 @@
+css
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 400px;
+  padding: 2rem;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  text-align: center;
+}
+#qr-code, #qr-reader {
+  margin: 1rem auto;
+}
+input[type="text"] {
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 0.5rem 0;
+}
+button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background: #1abc9c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #16a085;
+}

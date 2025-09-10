@@ -1,21 +1,30 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>heading</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Scanner & Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- QR generation library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <!-- QR scanning library -->
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
 </head>
 <body>
-    <h1>HTML</h1>
-    <h2>I Love it</h2>
-    <p>I Learn it from chai and code .
-        <hr>
-        <br/>
-         Minima voluptatibus quis eligendi li.</p>
-         <pre> 
-            line 1 <br>
-            line 2 <br>
-         </pre>
-         
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    <input type="text" id="qr-input" placeholder="Enter text or URL"/>
+    <button onclick="generateQRCode()">Generate QR Code</button>
+    <div id="qr-code"></div>
+
+    <h1>QR Code Scanner</h1>
+    <div id="qr-reader" style="width: 300px"></div>
+    <div>
+      <strong>Scanned Result:</strong>
+      <span id="scan-result"></span>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
